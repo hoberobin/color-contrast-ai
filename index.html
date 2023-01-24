@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Machine Learning AI</title>
+    <script src="//unpkg.com/brain.js" defer></script>
+    <script src="script.js" defer></script>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #color {
+        width: 400px;
+        height: 200px;
+        border: 6px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5vh;
+        font-size: 18px;
+      }
+
+      .white {
+        color: white;
+        margin-bottom: 16px;
+        font-family: sans-serif;
+      }
+
+      .black {
+        margin-bottom: 32px;
+        font-family: sans-serif;
+      }
+
+      #guess {
+        margin-bottom: -40px;
+        font-weight: 600;
+        font-family: sans-serif;
+      }
+
+      #white-button {
+        background-color: #e7e7e7;
+        border: 2px solid black;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin-top: 24px;
+        border-radius: 4px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      #black-button {
+        background-color: #e7e7e7;
+        border: 2px solid black;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        border-radius: 4px;
+        margin-right: auto;
+        margin-left: 16px;
+      }
+
+      #print-button {
+        background-color: #e7e7e7;
+        border: 2px solid black;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        border-radius: 4px;
+        margin-right: auto;
+        margin-left: 80px;
+      }
+
+      .description {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: sans-serif;
+        font-size: 18px;
+        padding-left: 15vw;
+        padding-right: 15vw;
+      }
+
+      .header {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: auto;
+        margin-top: 15vh;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="header">Color Contrast: Machine Learning AI</h1>
+    <p class="description">
+      This AI learns whether a font color should be black or white depending on
+      the background color. As you click the "White" or "Black" buttons, the AI
+      learns what color has better contrast and will guess the font color that
+      should be used.
+    </p>
+    <div id="color">
+      <div class="white">White Text</div>
+      <div class="black">Black Text</div>
+      <div id="guess">AI's Guess</div>
+    </div>
+    <div class="buttons">
+      <button id="white-button">White</button>
+      <button id="black-button">Black</button>
+      <button id="print-button">Print</button>
+    </div>
+  </body>
+</html>
